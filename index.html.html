@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      name="description"
+      content="This is a Marvel Survey page"
+    />
+    <meta name="robots" content="index,follow" />
+    <link rel="stylesheet" href="./Survey_Page.css" />
+    <title>Marvel Survey | Survey form</title>
+  </head>
+  <body>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <header>
+     <h1 id="title">Marvel Survey</h1>
+     <p id="description"><i><strong> Gracias por Ayudarnos a mejorar Nuestros Servicios</strong></i></p>
+    </header>
+
+      <form id="survey-form">
+
+        <div class="form-group">
+        <label id="name-label" for="name">Name</label>
+        <input 
+        class="control-form"
+        type="text" 
+        name="name" 
+        id="name" 
+        placeholder="Enter your Name";
+        
+        required />
+        
+        </div>
+
+
+        <div class="form-group">
+        <label id="email-label" for="email">Email</label>
+        <input
+         class="control-form"
+         type="email"
+         name="email"
+         id="email"
+         placeholder="Enter your Email"
+         required />
+         </div>
+
+
+        <div class="form-group">
+        <label id="number-label" for="number">Age</label>
+        <input 
+        class="control-form"
+        type="number"
+        name="number"
+        id="number"
+        min="10"
+        max="99"
+        placeholder="Enter your Age"
+        required />
+        </div>
+
+
+        <div class="form-group">
+          <p>¿Cuál es la mejor película del estudio Marvel?</p>
+          <select id="dropdown" name="role" class="control-form" required>
+            <option disabled selected value>Select current role</option>
+            <option value="Ironman">Iron Man (2008)</option>
+            <option value="Hulk">El increíble Hulk (The Incredible Hulk, 2008)</option>
+            <option value="Ironman2">Iron Man 2 (2010)</option>
+            <option value="Thor">Thor (2011)</option>
+            <option value="ThefirstCaptain">Capitán América: El primer vengador (Captain America: The First Avenger, 2011)</option>
+            <option value="TheAvengers">Los Vengadores (The Avengers, 2012)</option>
+            <option value="Ironman3">Iron Man 3 (2013)</option>
+            <option value="Thor2">Thor: El mundo oscuro (Thor: The Dark World, 2013)</option>
+          </select>
+        </div>
+
+
+        <div class="form-group">
+          <p>Would you recommend to see all Marvel Movies?</p>
+          <label>
+            <input
+              name="user-recommend"
+              value="definitely"
+              type="radio"
+              class="input-radio"
+              checked
+            />Definitely</label
+          >
+          <label>
+            <input
+              name="user-recommend"
+              value="maybe"
+              type="radio"
+              class="input-radio"
+            />Maybe</label
+          >
+    
+          <label
+            ><input
+              name="user-recommend"
+              value="not-sure"
+              type="radio"
+              class="input-radio"
+            />Not sure</label
+          >
+        </div>
+ 
+        <div class="form-group">
+          <p>
+            Seleciona 3 de tus personajes favoritos del Universo Marvel.
+            <span class="clue"></span>
+          </p>
+    
+          <label
+            ><input
+              name="prefer"
+              value="TonyStark/IronMan"
+              type="checkbox"
+              class="input-checkbox"
+            />Tony Stark/Iron Man</label
+          >
+          <label>
+            <input
+              name="prefer"
+              value="Thor"
+              type="checkbox"
+              class="input-checkbox"
+            />Thor</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="CapitanaMarvel"
+              type="checkbox"
+              class="input-checkbox"
+            />Capitana Marvel</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="The Amazing Spider-Man"
+              type="checkbox"
+              class="input-checkbox"
+            />Spider-Man</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="BruceBanner/Hulk"
+              type="checkbox"
+              class="input-checkbox"
+            />Bruce Banner/Hulk</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="PepperPotts"
+              type="checkbox"
+              class="input-checkbox"
+            />Pepper Potts</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="Odin"
+              type="checkbox"
+              class="input-checkbox"
+            />Odins</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="Malekith"
+              type="checkbox"
+              class="input-checkbox"
+            />Malekithx</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="Trevor Slattery/Mandarín"
+              type="checkbox"
+              class="input-checkbox"
+            />Trevor Slattery/Mandarín</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="Maya Hansen"
+              type="checkbox"
+              class="input-checkbox"
+            />Maya Hansen</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="JohannSchmidt/Red Skull"
+              type="checkbox"
+              class="input-checkbox"
+            />Johann Schmidt/Red Skull</label
+          >
+        </div>
+
+        <div class="form-group">
+          <p>Any comments or suggestions?</p>
+          <textarea
+            id="comments"
+            class="input-textarea"
+            name="comment"
+            placeholder="Enter your comment here..."
+          ></textarea>
+        </div>
+
+        <div class="form-group">
+          <button type="submit" id="submit" class="submit-button">
+            Submit
+          </button>
+        </div>
+      </form>
+    </body>
+  
